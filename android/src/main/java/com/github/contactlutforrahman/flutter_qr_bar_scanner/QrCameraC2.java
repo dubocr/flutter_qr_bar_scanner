@@ -99,7 +99,7 @@ class QrCameraC2 implements QrCamera {
             for (String id : cameraIdList) {
                 CameraCharacteristics cameraCharacteristics = manager.getCameraCharacteristics(id);
                 Integer integer = cameraCharacteristics.get(CameraCharacteristics.LENS_FACING);
-                if (integer != null && integer == LENS_FACING) {
+                if (integer != null && integer == LENS_FACING_FRONT) {
                     cameraId = id;
                     break;
                 }
